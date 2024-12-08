@@ -1,0 +1,61 @@
+.vertical-carousel {
+    position: relative;
+    width: 300px;
+    /* Ancho del carrusel */
+    height: 500px;
+    /* Altura del carrusel */
+    overflow: hidden;
+    /* Oculta las diapositivas fuera del contenedor */
+    margin: auto;
+}
+
+.carousel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    /* Alinea las diapositivas verticalmente */
+    transition: transform 0.5s ease-in-out;
+    /* Animación suave */
+}
+
+.carousel-slide-vertical {
+    flex: 0 0 100%;
+    /* Cada diapositiva ocupa todo el contenedor */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.carousel-slide-vertical img {
+    width: 40%;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.button-vertical {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.button-vertical .prev {
+    top: 10px;
+    /* Posición superior para la flecha arriba */
+}
+
+.button-vertical .next {
+    bottom: 10px;
+    /* Posición inferior para la flecha abajo */
+}
+
+.button-vertical :hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

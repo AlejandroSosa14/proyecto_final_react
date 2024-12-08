@@ -1,0 +1,28 @@
+.dual-carousel {
+    display: flex;
+    /* Alinea los carruseles en una fila */
+    justify-content: space-between;
+    /* Espacio igual entre los carruseles */
+    align-items: flex-start;
+    /* Alinea los carruseles al principio */
+    gap: 20px;
+    /* Espaciado entre los carruseles */
+    padding: 20px;
+    width: 100%;
+    padding: 1rem 0;
+    top: 0;
+    left: 0;
+}
+
+.carousel-wrapper {
+    flex: 1;
+    /* Ambos carruseles ocupan el mismo ancho */
+    max-width: 48%;
+    /* Limita el ancho de cada carrusel al 48% */
+    box-sizing: border-box;
+}
+
+.carousel-wrapper h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}

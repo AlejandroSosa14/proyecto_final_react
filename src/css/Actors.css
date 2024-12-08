@@ -1,0 +1,17 @@
+.actor-mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actor-card {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.actor-image {
+    width: 100%;
+    /* Para hacer la imagen circular */
+    object-fit: cover;
+}
